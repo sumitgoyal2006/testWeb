@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AITechone | Upgrade Your Skills</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  background: #0a2540;
+  padding: 15px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00c3ff;
+}
+
+/* HERO */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  background: linear-gradient(to right, #0a2540, #001d3d);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+#hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  margin-bottom: 20px;
+}
+
+#hero img {
+  width: 450px;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #00c3ff;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #008ecf;
+}
+
+/* COUNTERS */
+#counters {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 8%;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.counter {
+  text-align: center;
+  margin: 20px;
+}
+
+.counter h2 {
+  font-size: 36px;
+  color: #0a2540;
+}
+
+/* COURSES */
+#courses {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* TRAINING MODES */
+#training-modes {
+  padding: 80px 8%;
+  background: #eef4ff;
+  text-align: center;
+}
+
+.mode-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.mode {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* TESTIMONIALS */
+#testimonials {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.testimonial img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* FREE DEMO */
+#free-demo {
+  padding: 80px 8%;
+  background: linear-gradient(to right, #0a2540, #001d3d);
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+form button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  #hero {
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2 style="color:white;">AITechone</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="hero">
+  <div>
+    <h1>Upgrade your learning Skills & Upgrade your life</h1>
+    <p>Expert-led online courses in Salesforce, AI, Python & More.</p>
+    <a href="#" class="btn">Explore Courses</a>
+  </div>
+  <img src="https://rxdtheme.com/themes-wp/edumel/wp-content/uploads/2023/09/banner_img-1.png">
+</section>
+
+<section id="counters">
+  <div class="counter"><h2>70+</h2><p>Online Tutors</p></div>
+  <div class="counter"><h2>50+</h2><p>Courses</p></div>
+  <div class="counter"><h2>2000+</h2><p>Students</p></div>
+  <div class="counter"><h2>100%</h2><p>Satisfaction</p></div>
+</section>
+
+<section id="courses">
+  <h2>Popular Courses</h2>
+  <div class="course-container">
+
+    <div class="course-card">
+      <img src="https://aitechone.com/wp-content/uploads/2025/08/AgentForce-1.png">
+      <h3>Salesforce Agent Force</h3>
+      <p>$250</p>
+      <a href="#" class="btn">Join Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://aitechone.com/wp-content/uploads/2025/08/Graphql.png">
+      <h3>Salesforce GraphQL</h3>
+      <p>$200</p>
+      <a href="#" class="btn">Join Now</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://aitechone.com/wp-content/uploads/2025/08/Salesforce-Flows.png">
+      <h3>Mastering Salesforce Flows</h3>
+      <p>$250</p>
+      <a href="#" class="btn">Join Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="training-modes">
+  <h2>Training Modes</h2>
+  <div class="mode-container">
+    <div class="mode">
+      <h3>Live Virtual Training</h3>
+      <p>Instructor-led sessions with real-time projects.</p>
+    </div>
+    <div class="mode">
+      <h3>Self Paced Learning</h3>
+      <p>Recorded videos with lifetime access.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Our Students Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <img src="https://aitechone.com/wp-content/uploads/2023/09/testimonial-avata-03-1.jpg">
+      <h4>Nikolas</h4>
+      <p>Excellent training & support!</p>
+    </div>
+    <div class="testimonial">
+      <img src="https://aitechone.com/wp-content/uploads/2023/09/testimonial-avata-02-1.jpg">
+      <h4>Jackie</h4>
+      <p>Very practical sessions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="free-demo">
+  <h2>Get a Live FREE Demo</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone" required>
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 AITechone | +91-7080814180 | support@aitechone.com
+</footer>
+
+
+</body>
+</html>
